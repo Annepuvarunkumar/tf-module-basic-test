@@ -6,7 +6,7 @@ resource "aws_instance" "instance" {
   vpc_security_group_ids   = var.security_group
 
   tags = {
-    name = var.name
+    Name = var.name
   }
 }
 
@@ -33,7 +33,6 @@ ansible-playbook -i ${var.name}-dev.varundevops.online, main.yml -e ansible_user
 EOF
   }
 }
-
 
 
 
