@@ -9,7 +9,7 @@ resource "aws_instance" "instance" {
     Name = var.name
   }
 }
-
+ 
 resource "aws_route53_record" "instance" {
   zone_id                  = var.zone_id
   name                     = "${var.name}-dev.varundevops.online"
